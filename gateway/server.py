@@ -30,7 +30,7 @@ def login():
     else:
         return err
 
-@server.router("/upload", methods=["POST"])
+@server.route("/upload", methods=["POST"])
 def upload():
     access, err = validate.token(request)
 
