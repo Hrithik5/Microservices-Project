@@ -1,3 +1,4 @@
 auth/env
 gateway/env
 converter/env
+notify/env
