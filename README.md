@@ -4,6 +4,10 @@
 This project is a microservices-based application that converts video files into MP3 format. It leverages Python, RabbitMQ, MongoDB, MySQL, Docker, and Kubernetes to ensure efficient processing, storage, and delivery of MP3 files.
 
 ## Architectural Diagram
+![image](https://github.com/user-attachments/assets/3590b08b-d7c5-4611-b7e2-4671ce1d3bf0)
+
+
+
 ## Tech Stack
 
 **Programming Language:** Python
