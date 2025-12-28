@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: media-intelligence-service
+  namespace: media-platform
 spec:
   replicas: 2
   selector:
@@ -16,11 +17,13 @@ spec:
         - name: media-intelligence
           image: media-intelligence-service:latest
           imagePullPolicy: IfNotPresent
+
           envFrom:
             - configMapRef:
                 name: media-intelligence-config
             - secretRef:
                 name: media-intelligence-secrets
+
           resources:
             requests:
               cpu: "250m"
@@ -28,12 +31,14 @@ spec:
             limits:
               cpu: "500m"
               memory: "1Gi"
+
           livenessProbe:
             httpGet:
               path: /health
               port: 8080
             initialDelaySeconds: 30
             periodSeconds: 20
+
           readinessProbe:
             httpGet:
               path: /ready

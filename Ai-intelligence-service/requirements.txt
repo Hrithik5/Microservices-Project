@@ -1,7 +1,6 @@
-langdetect
-yake
-librosa
-numpy
-scikit-learn
+openai
 pika
 pymongo
+librosa
+numpy
+python-dotenv
