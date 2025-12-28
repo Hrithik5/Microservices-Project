@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: media-intelligence-config
+data:
+  RABBITMQ_QUEUE: media_events
+  METADATA_DB_NAME: media_metadata
+  LOG_LEVEL: INFO
