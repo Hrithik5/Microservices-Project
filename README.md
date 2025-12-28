@@ -30,9 +30,4 @@ This project is a microservices-based application that converts video files into
 * The video-to-MP3 converter service consumes messages from the RabbitMQ queue, retrieves the video from MongoDB, converts it to MP3, stores the MP3 in MongoDB, and sends a new message to the queue 
 * The notification service consumes messages from the queue and sends an email notification to the client, informing them that the MP3 is ready for download 
 * The client uses a unique ID and JWT to make a request to the API Gateway to download the MP3, which is then pulled from MongoDB and served to the client 
-## Contributing
-
-Contributions are always welcome!🥳
-
-Feel free to fork this repo, submit issues, and contribute to improve functionality.
 
